@@ -9,8 +9,10 @@
     
     <body>
         <header>
+
             <?php
-              include_once("header.php");  
+                
+                include_once("header.php");  
             ?>
         </header>
 
@@ -31,11 +33,13 @@
                 case 'home': require 'home.php'; break;
                 case 'sobre': require 'sobre.php'; break;
                 case 'contato': require 'contato.php'; break;
-                default: require 'home.php';
+                default: require 'default.php';
             }
 
         ?>
-
+        
+        
+        
         <footer>
             <?php
                 include_once("footer.php");
@@ -47,6 +51,6 @@
                 ?>
             </nav>
         </footer>
-
+        <link rel="stylesheet" href="css/<?php echo $css; ?>.css">    
     </body>
 </html>
