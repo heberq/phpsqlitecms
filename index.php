@@ -8,6 +8,18 @@
     </head>
     
     <body>
+        <header>
+            <?php
+              include_once("header.php");  
+            ?>
+        </header>
+
+        <nav>
+            <?php
+                include_once("menu.php");
+            ?>
+        </nav>
+        
         <?php
 
             $page = "";
@@ -22,7 +34,19 @@
                 default: require 'home.html';
             }
 
-        ?> 
+        ?>
+
+        <footer>
+            <?php
+                include_once("footer.php");
+            ?>
+       
+            <nav>
+                <?php
+                    include_once("menu.php");
+                ?>
+            </nav>
+        </footer>
 
     </body>
 </html>
