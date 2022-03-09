@@ -28,10 +28,10 @@
             }
 
             switch($page){
-                case 'home': require 'home.html'; break;
-                case 'sobre': require 'sobre.html'; break;
-                case 'contato': require 'contato.html'; break;
-                default: require 'home.html';
+                case 'home': require 'home.php'; break;
+                case 'sobre': require 'sobre.php'; break;
+                case 'contato': require 'contato.php'; break;
+                default: require 'home.php';
             }
 
         ?>
